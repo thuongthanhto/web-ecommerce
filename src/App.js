@@ -13,8 +13,12 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/" componenet={HomePage} />
-        <Route path="/hats" componenet={HatsPage} />
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route path="/hats" >
+          <HatsPage />
+        </Route>
       </Switch>
     </div>
   );
